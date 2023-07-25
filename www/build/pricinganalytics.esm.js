@@ -1,0 +1,2 @@
+import{p as e,b as t}from"./p-e0808ed2.js";export{s as setNonce}from"./p-e0808ed2.js";const o=()=>{const s=import.meta.url;const t={};if(s!==""){t.resourcesUrl=new URL(".",s).href}return e(t)};o().then((e=>t([["p-4326e41b",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],e)));
+//# sourceMappingURL=pricinganalytics.esm.js.map
