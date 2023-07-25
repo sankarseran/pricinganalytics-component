@@ -35,6 +35,7 @@ export class MyComponent {
     return (
       <div>
         <p> Hello, World! I'm {this.getText()} </p>
+        { this.pKey }
         {this.pKey === 'jwt-token' ? 
           (
             <div>
