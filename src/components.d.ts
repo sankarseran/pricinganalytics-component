@@ -8,6 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PricingAnalytics {
         /**
+          * The code to show pricing
+         */
+        "code": string;
+        /**
           * The first name
          */
         "first": string;
@@ -19,10 +23,6 @@ export namespace Components {
           * The middle name
          */
         "middle": string;
-        /**
-          * The last name
-         */
-        "pKey": string;
     }
 }
 declare global {
@@ -39,6 +39,10 @@ declare global {
 declare namespace LocalJSX {
     interface PricingAnalytics {
         /**
+          * The code to show pricing
+         */
+        "code"?: string;
+        /**
           * The first name
          */
         "first"?: string;
@@ -50,10 +54,6 @@ declare namespace LocalJSX {
           * The middle name
          */
         "middle"?: string;
-        /**
-          * The last name
-         */
-        "pKey"?: string;
     }
     interface IntrinsicElements {
         "pricing-analytics": PricingAnalytics;

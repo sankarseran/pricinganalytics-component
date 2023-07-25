@@ -23,9 +23,9 @@ export class MyComponent {
   @Prop() last: string;
 
   /**
- * The last name
+ * The code to show pricing
  */
-  @Prop() pKey: string;
+  @Prop() code: string;
 
   private getText(): string {
     return format(this.first, this.middle, this.last);
@@ -35,8 +35,8 @@ export class MyComponent {
     return (
       <div>
         <p> Hello, World! I'm {this.getText()} </p>
-        { this.pKey }
-        {this.pKey === 'jwt-token' ? 
+        <p> Token: { this.code ? this.code : '-'} </p>
+        {this.code && this.code === 'jwt-token' ? 
           (
             <div>
               <div class="columns">
