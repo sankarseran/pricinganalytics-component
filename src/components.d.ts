@@ -19,6 +19,10 @@ export namespace Components {
           * The middle name
          */
         "middle": string;
+        /**
+          * The last name
+         */
+        "pKey": string;
     }
 }
 declare global {
@@ -46,6 +50,10 @@ declare namespace LocalJSX {
           * The middle name
          */
         "middle"?: string;
+        /**
+          * The last name
+         */
+        "pKey"?: string;
     }
     interface IntrinsicElements {
         "pricing-analytics": PricingAnalytics;
