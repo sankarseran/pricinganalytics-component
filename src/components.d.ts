@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface PricingAnalytics {
         /**
           * The first name
          */
@@ -22,18 +22,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLPricingAnalyticsElement extends Components.PricingAnalytics, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLPricingAnalyticsElement: {
+        prototype: HTMLPricingAnalyticsElement;
+        new (): HTMLPricingAnalyticsElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "pricing-analytics": HTMLPricingAnalyticsElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface PricingAnalytics {
         /**
           * The first name
          */
@@ -48,14 +48,14 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "pricing-analytics": PricingAnalytics;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pricing-analytics": LocalJSX.PricingAnalytics & JSXBase.HTMLAttributes<HTMLPricingAnalyticsElement>;
         }
     }
 }

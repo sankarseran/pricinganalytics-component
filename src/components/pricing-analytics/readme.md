@@ -1,6 +1,4 @@
-# my-component
-
-
+# pricing-analytics
 
 <!-- Auto Generated Below -->
 
