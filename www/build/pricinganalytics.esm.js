@@ -1,2 +1,0 @@
-import{p as e,b as t}from"./p-e0808ed2.js";export{s as setNonce}from"./p-e0808ed2.js";const o=()=>{const s=import.meta.url;const t={};if(s!==""){t.resourcesUrl=new URL(".",s).href}return e(t)};o().then((s=>t([["p-b29d1416",[[1,"pricing-analytics",{first:[1],middle:[1],last:[1],code:[1]}]]]],s)));
-//# sourceMappingURL=pricinganalytics.esm.js.map
