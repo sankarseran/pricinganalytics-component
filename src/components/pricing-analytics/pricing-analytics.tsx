@@ -35,7 +35,6 @@ export class MyComponent {
     return (
       <div>
         <p> Hello, World! I'm {this.getText()} </p>
-        <p> Token: { this.code ? this.code : '-'} </p>
         {this.code && this.code === 'jwt-token' ? 
           (
             <div>
